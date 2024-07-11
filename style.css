@@ -1,0 +1,81 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Example of a responsive grid layout */
+.container {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 16px; */
+
+    /* new */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 10px;
+    text-align: center;
+
+
+  }
+  
+  /* Example of a responsive flexbox layout */
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+/* new */
+    justify-content: center;
+  }
+  
+  .flex-item {
+    flex: 1 1 200px;
+  }
+  
+
+  /* Mobile First Approach */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 10px;
+  }
+  
+  /* Styles for tablets and larger screens */
+  @media (min-width: 600px) {
+     body {
+      padding: 20px;
+    }
+  
+    body {
+      font-size: 1.2em;
+    }
+  }
+  
+  /* Styles for desktops and larger screens */
+  @media (min-width: 992px) {
+    body {
+      padding: 40px;
+    }
+  
+    body {
+      font-size: 1.4em;
+    }
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Ensure iframes and embedded videos are responsive */
+  iframe, embed, object, video {
+    max-width: 100%;
+    height: auto;
+  }
+  
